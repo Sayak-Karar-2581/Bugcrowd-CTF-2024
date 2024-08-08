@@ -1,0 +1,7 @@
+Checking In
+
+Agents, the time has come to assist Buggy in the critical mission against the Deadly Dropbears. Our intelligence has uncovered a coded message believed to have been sent from an insider, who is a customer of G0ldm4n Hacks. This message, however, is not written in plain sight but is hidden within a series of seemingly ordinary elements.
+
+Note: Submit the flag in the same way you found it
+
+CMgHN{KClScHKOFSiN_AlPMgBLiScMgBK_MgFNaB_H_HePKK}
