@@ -1,0 +1,5 @@
+What's the flight number?
+
+We are meeting Buggy at the Los Angeles airport. Afterward, we'll head to the hotel to stay overnight before flying to Las Vegas together to attend BlackHat USA. However, Buggy didn’t give me the details of their flight and only sent me this picture before boarding. Can you help me find the flight number?
+
+Note: surrond flight code with flag{}
