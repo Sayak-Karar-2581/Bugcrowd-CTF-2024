@@ -1,0 +1,3 @@
+Blue
+
+Placeholder company has asked Buggy to assist their blue team in looking at some malicious log entries, it looks like there was an RFI vulnerability on one of their servers. Can you help her find the logs before the threat actors can exploit further?
