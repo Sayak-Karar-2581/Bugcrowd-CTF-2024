@@ -1,0 +1,5 @@
+The undercover
+
+Buggy is on a secret mission, undercover as a tourist in this culturally significant vacation destination. As Buggy wanders the narrow alleys paved with cobblestones and lined with colourful buildings, the mission hinges on uncovering a hidden secret. Your mission is to discover the coordinates of this mysterious location.
+
+Find the location (latitude, longitude) of this area rounded to 3 decimal places and wrap it in flag{}, e.g. flag{-19.242, 47.497}
