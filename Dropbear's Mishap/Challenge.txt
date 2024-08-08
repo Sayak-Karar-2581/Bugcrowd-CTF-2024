@@ -1,0 +1,5 @@
+Dropbear's Mishap
+
+Buggy has intercepted intelligence that the Dropbears sent their intern on a crucial mission. During this operation, the intern inadvertently left a trace in the terminal history. This slip-up includes a sensitive credential, which could unlock valuable information.
+
+Your mission is to uncover the credential from the terminal history file and use it to access the intern's account. The credential will help you find the secret they were hiding.
