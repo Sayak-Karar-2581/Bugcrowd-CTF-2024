@@ -1,0 +1,9 @@
+The cryptic meetup
+
+Attention agents, Buggy needs your expertise to infiltrate the Deadly Dropbears and prevent their planned attack on Super Lehman Bros. Our informant has intercepted a cryptic image that reveals the location of a critical meeting between the Dropbears and an info broker. Your task is to analyze this image and determine the exact destination of the meeting.
+
+Time is running out, and the security of one of the world's largest financial institutions—and the finances of millions—depends on your skills. The image is our only lead. Scrutinize every detail and use all available resources to trace the path and uncover the meeting's location.
+
+Can you decipher the hidden clues and assist Buggy in this high-stakes mission?
+
+Note: location should be surrounded with flag{} and underscore for spaces
