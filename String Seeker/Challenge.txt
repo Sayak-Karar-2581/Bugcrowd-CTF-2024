@@ -1,3 +1,0 @@
-String Seeker
-
-Buggy has requested a memory dump from several Super Lehman Bros employees computers for forensic analysis. Can you assist Buggy in analyzing the strings within to identify useful information?
