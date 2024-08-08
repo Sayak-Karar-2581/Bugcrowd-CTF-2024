@@ -1,0 +1,5 @@
+Wireshark Challenge
+
+Attention Agents,
+
+Buggy needs your help with a critical mission. The notorious hacker group known as the Drop Bears has infiltrated our client's systems. Buggy has received a suspicious ZIP file alongside some intriguing Wireshark logs that may hold the key to unraveling the Drop Bears' latest heist. Your task is to assist Buggy in analyzing these logs, cracking the ZIP file, and retrieving the flag hidden within to expose the Drop Bears' malicious activities.
