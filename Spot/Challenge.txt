@@ -1,0 +1,7 @@
+Spot!
+
+Buggy receives an anomalous letter hinting at the location of hidden treasure. Can you decipher the clues leading to its discovery?
+
+“In the other hemisphere, as the coastal air turns crisp, locals sense the arrival of a special season. Amidst the quiet bush trails and along the rugged coastal paths, whispers of anticipation circulate among those who seek the elusive wonders of the sea. Nature's spectacle awaits, where keen eyes might catch a glimpse of an annual visitor gracing our shores. Just a pair of these majestic creatures has been spotted, about several hundred meters off the breakwall, adding to the allure of the experience.”
+
+The flag is body of water seperated by a _ for any spaces
